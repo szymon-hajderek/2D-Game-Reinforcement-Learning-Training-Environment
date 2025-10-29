@@ -136,7 +136,7 @@ int main() {
     Game train_game(train_env);
 
     // 100k, 300k, 500k, ->1M<-, 2M, 10M
-    const int NUM_EPISODES = 100'000;
+    const int NUM_EPISODES = 2'000'000;
     const double step = (1 - policy.eps) / NUM_EPISODES;
     for(int episode = 1; episode <= NUM_EPISODES; episode++) {
       std::cerr << "EPISODE: " << episode << '\n';

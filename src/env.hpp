@@ -48,10 +48,11 @@ class GameEnvironment {
   Game* game{nullptr};
   std::string info_string;
   unsigned FPS;
-
+  
+  double seconds_since_start = 0.0;
   int deaths{0}, score{0};
   float dt{0.f};
-
+  
  public:
   float width, height;
 
@@ -120,6 +121,7 @@ void GameEnvironment::run(Policy* policy, PolicyMode mode, bool should_render) {
 
     if(should_render) win.clear({ 122, 122, 122 });
 
+    seconds_since_start += dt;
     GameEvents ge = game->update(dt);
     deaths += ge.died;
     score  += ge.fruit_collected;

@@ -104,5 +104,5 @@ float GameEnvironment::calc_rewards(GameEvents const& ev) {
 
 // --- HUD update --------------------------------------------------------------
 void GameEnvironment::update_hud() {
-  info_string = "wynik: " + std::to_string(deaths * DIED_REWARD + score * FRUIT_COLLECTED_REWARD);
+  info_string = "Score: " + std::to_string(score) + ". Score/s: " + std::to_string(score / double(seconds_since_start));
 }
