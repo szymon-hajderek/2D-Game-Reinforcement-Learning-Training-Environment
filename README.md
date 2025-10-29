@@ -1,6 +1,6 @@
-# Reinforcement Learning Framework in C++17
+# Reinforcement Learning Sandbox
 
-A lightweight reinforcement learning framework in C++17, designed to experiment with training agent policies in a 2D environment. The framework provides an abstract agent interface and a minimal 2D game environment to test learning strategies.
+A lightweight reinforcement learning sandbox in C++17, designed to experiment with training agent policies in a 2D environment. It provides an abstract agent interface and a minimal 2D game environment to test learning strategies.
 
 The focus of the project:
  - Gaining deeper understanding of reinforcement learning fundamentals
